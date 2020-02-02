@@ -12,7 +12,7 @@ end
 
 def assign_rooms (attendees)
   attendees.map.with_index do |name, index|
-    "Hello, #{name}! You'll be assigned to rooms #{index+1}"
+    "Hello, #{name}! You'll be assigned to room #{index+1}!"
   end
 end
 
@@ -22,7 +22,7 @@ batch_badge_creator (attendees).each do |name|
   puts name
 end
 
-assign_rooms (attendees).each do |name|
+assign_room (attendees).each do |name|
   puts name
 end
 
